@@ -46,6 +46,8 @@
             GO = "${go}/bin/go";
             GOROOT = "${go}/share/go";
           };
+
+        packages.homebox = pkgs.callPackage ./package.nix { };
       }
     );
 }
